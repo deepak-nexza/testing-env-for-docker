@@ -26,7 +26,7 @@ after_success:
 #   app: 'multi-docker'
 #   env: 'MultiDocker-env'
 #   bucket_name: 'elasticbeanstalk-us-east-2-263390996180'
-#   bucket_path: 'multi-docker'
+#   bucket_path: 'multi-docker' 
 #   on: 
 #     branch: master
 #   access_key_id: $AWS_ACCESS_KEY 
