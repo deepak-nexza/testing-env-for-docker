@@ -20,14 +20,15 @@ after_success:
   - docker push sharmad6/multi-server
   - docker push sharmad6/multi-worker
 
-# deploy:
-#   provider: elasticbeanstalk
-#   region: 'us-east-2'
-#   app: 'multi-docker'
-#   env: 'MultiDocker-env'  
-#   bucket_name: 'elasticbeanstalk-us-east-2-263390996180'
-#   bucket_path: 'multi-docker' 
-#   on: 
-#     branch: master
-#   access_key_id: $AWS_ACCESS_KEY 
-#   secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-2'
+  app: 'multi-docker'
+  env: 'Multidocker-env'  
+  bucket_name: 'elasticbeanstalk-us-east-2-191867361105'
+  bucket_path: 'multi-docker' 
+  on: 
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY 
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
